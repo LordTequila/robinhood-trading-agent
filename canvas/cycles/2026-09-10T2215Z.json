@@ -1,0 +1,87 @@
+{
+  "cycle_id": "2026-09-10T2215Z",
+  "triggered_at": "2026-09-10T22:15:27.470Z",
+  "evaluated_at": "2026-09-10T22:16:10Z",
+  "evaluated_at_et": "2026-09-10T18:16:10-04:00",
+  "cron": "15 14 * * 1-5",
+  "account_nickname": "SPIES",
+  "account_last4": "4079",
+  "account_type": "cash",
+  "status": "complete_no_orders",
+  "guardrails": {
+    "settled_cash": 200.0,
+    "cash": 200.0,
+    "unsettled_funds": 0.0,
+    "buying_power": 200.0,
+    "kill_switch_floor": 85.0,
+    "kill_switch_triggered": false,
+    "max_position_notional": 10.0,
+    "volatility_halt_windows_et": ["09:30-10:00", "15:30-16:00"],
+    "in_volatility_halt": false,
+    "regular_hours_open": false,
+    "orders_blocked_reason": "No entry or exit signal. Regular session closed; fractional/market orders would queue into the 09:30 ET open halt and were not placed."
+  },
+  "quotes": {
+    "SPY": {
+      "last_trade_price": 757.87,
+      "last_non_reg_trade_price": 758.3,
+      "previous_close": 762.4,
+      "bid": 758.28,
+      "ask": 758.38,
+      "day_change_pct": -0.59,
+      "has_traded": true,
+      "state": "active"
+    },
+    "QQQ": {
+      "last_trade_price": 708.66,
+      "last_non_reg_trade_price": 708.81,
+      "previous_close": 716.31,
+      "bid": 708.79,
+      "ask": 708.84,
+      "day_change_pct": -1.07,
+      "has_traded": true,
+      "state": "active"
+    },
+    "XLK": {
+      "last_trade_price": 185.21,
+      "last_non_reg_trade_price": 185.47,
+      "previous_close": 187.87,
+      "bid": 185.29,
+      "ask": 185.44,
+      "day_change_pct": -1.42,
+      "has_traded": true,
+      "state": "active"
+    },
+    "VTI": {
+      "last_trade_price": 373.22,
+      "last_non_reg_trade_price": 373.3,
+      "previous_close": 375.56,
+      "bid": 373.2,
+      "ask": 373.68,
+      "day_change_pct": -0.62,
+      "has_traded": true,
+      "state": "active"
+    }
+  },
+  "rsi_14_daily": {
+    "bar_begins_at": "2026-09-09T00:00:00Z",
+    "entry_threshold": 35,
+    "values": {
+      "SPY": 47.99916043537533,
+      "QQQ": 51.58500026498997,
+      "XLK": 56.15744196856817,
+      "VTI": 46.91703939625429
+    },
+    "entries_eligible": []
+  },
+  "positions": [],
+  "exits_eligible": [],
+  "orders_executed": [],
+  "open_orders": [],
+  "alerts": [],
+  "portfolio": {
+    "total_value": 200.0,
+    "equity_value": 0.0,
+    "cash": 200.0
+  }
+}
