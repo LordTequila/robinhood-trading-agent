@@ -1,0 +1,170 @@
+{
+  "cycle_id": "2026-09-10T2240Z",
+  "triggered_at": "2026-09-10T22:40:12.566Z",
+  "evaluated_at": "2026-09-10T22:41:00Z",
+  "evaluated_et": "2026-09-10T18:41:00-04:00",
+  "account_nickname": "SPIES",
+  "account_type": "cash",
+  "result": "no_orders",
+  "guardrails": {
+    "cash": "200.00",
+    "settled_cash": "200.00",
+    "unsettled_funds": "0.00",
+    "buying_power": "200.00",
+    "equity_value": "0.00",
+    "total_value": "200.00",
+    "kill_switch_floor": "85.00",
+    "kill_switch_triggered": false,
+    "max_position_usd": "10.00",
+    "session": "regular_closed",
+    "volatility_halt_active": false,
+    "orders_blocked_reason": "Regular session closed. Queued regular-hours market/stop orders would execute at 09:30 ET inside the open volatility halt."
+  },
+  "positions": [],
+  "orders": {
+    "open": [],
+    "queued": [],
+    "executed_this_cycle": []
+  },
+  "exits": {
+    "scanned": true,
+    "applicable": false,
+    "profit_target_pct": 5,
+    "stop_loss_pct": 3,
+    "sold": []
+  },
+  "watchlist": ["SPY", "QQQ", "XLK", "VTI"],
+  "scan_only": ["XLI", "XLF", "XLE", "XLV", "IWM", "TLT", "GLD"],
+  "rsi": {
+    "period": 14,
+    "interval": "day",
+    "bounds": "regular",
+    "bar_begins_at": "2026-09-09T00:00:00Z",
+    "values": {
+      "SPY": 47.99916043537533,
+      "QQQ": 51.58500026498997,
+      "XLK": 56.15744196856817,
+      "VTI": 46.91703939625429,
+      "XLI": 32.11274769085301,
+      "XLF": 46.02072063573199,
+      "XLE": 68.42393433084442,
+      "XLV": 43.61003589775857,
+      "IWM": 39.87137596696185,
+      "TLT": 40.867970210241154,
+      "GLD": 50.149745556841026
+    }
+  },
+  "quotes": {
+    "prior_close_date": "2026-09-09",
+    "results": {
+      "SPY": {
+        "last_trade_price": "757.870000",
+        "last_non_reg_trade_price": "758.050000",
+        "previous_close": "762.400000",
+        "bid_price": "758.000000",
+        "ask_price": "758.030000"
+      },
+      "QQQ": {
+        "last_trade_price": "708.660000",
+        "last_non_reg_trade_price": "707.982800",
+        "previous_close": "716.310000",
+        "bid_price": "707.920000",
+        "ask_price": "707.960000"
+      },
+      "XLK": {
+        "last_trade_price": "185.210000",
+        "last_non_reg_trade_price": "185.470000",
+        "previous_close": "187.870000",
+        "bid_price": "185.000000",
+        "ask_price": "185.160000"
+      },
+      "VTI": {
+        "last_trade_price": "373.220000",
+        "last_non_reg_trade_price": "373.585100",
+        "previous_close": "375.560000",
+        "bid_price": "373.200000",
+        "ask_price": "373.840000"
+      },
+      "XLI": {
+        "last_trade_price": "170.530000",
+        "last_non_reg_trade_price": "170.221700",
+        "previous_close": "171.790000",
+        "bid_price": "170.000000",
+        "ask_price": "185.510000"
+      },
+      "XLF": {
+        "last_trade_price": "56.880000",
+        "last_non_reg_trade_price": "56.896000",
+        "previous_close": "57.060000",
+        "bid_price": "56.900000",
+        "ask_price": "56.950000"
+      },
+      "XLE": {
+        "last_trade_price": "64.940000",
+        "last_non_reg_trade_price": "64.888600",
+        "previous_close": "65.310000",
+        "bid_price": "64.870000",
+        "ask_price": "64.880000"
+      },
+      "XLV": {
+        "last_trade_price": "165.670000",
+        "last_non_reg_trade_price": "165.650000",
+        "previous_close": "166.580000",
+        "bid_price": "165.550000",
+        "ask_price": "166.120000"
+      },
+      "IWM": {
+        "last_trade_price": "287.737500",
+        "last_non_reg_trade_price": "287.710000",
+        "previous_close": "290.640000",
+        "bid_price": "287.620000",
+        "ask_price": "287.670000"
+      },
+      "TLT": {
+        "last_trade_price": "80.790000",
+        "last_non_reg_trade_price": "80.750000",
+        "previous_close": "81.730000",
+        "bid_price": "80.740000",
+        "ask_price": "80.750000"
+      },
+      "GLD": {
+        "last_trade_price": "396.460000",
+        "last_non_reg_trade_price": "395.703400",
+        "previous_close": "403.350000",
+        "bid_price": "395.550000",
+        "ask_price": "395.680000"
+      }
+    }
+  },
+  "entries": {
+    "candidates_rsi_below_35": ["XLI"],
+    "executed": [],
+    "blocked": [
+      {
+        "symbol": "SPY",
+        "rsi": 48.00,
+        "reason": "rsi_not_oversold"
+      },
+      {
+        "symbol": "QQQ",
+        "rsi": 51.59,
+        "reason": "rsi_not_oversold"
+      },
+      {
+        "symbol": "XLK",
+        "rsi": 56.16,
+        "reason": "rsi_not_oversold"
+      },
+      {
+        "symbol": "VTI",
+        "rsi": 46.92,
+        "reason": "rsi_not_oversold"
+      },
+      {
+        "symbol": "XLI",
+        "rsi": 32.11,
+        "reason": "off_hard_watchlist_and_session_closed"
+      }
+    ]
+  }
+}
