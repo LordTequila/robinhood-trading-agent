@@ -1,0 +1,300 @@
+{
+  "cycle_id": "2026-09-11T1418Z",
+  "triggered_at": "2026-09-11T14:18:55.654Z",
+  "evaluated_at": "2026-09-11T14:21:34Z",
+  "evaluated_et": "2026-09-11T10:21:34-04:00",
+  "account_nickname": "SPIES",
+  "account_type": "cash",
+  "result": "buys_filled_stops_rejected",
+  "guardrails": {
+    "cash_pre_trade": "200.00",
+    "cash_post_trade": "180.00",
+    "settled_cash_pre_trade": "200.00",
+    "unsettled_funds": "0.00",
+    "buying_power_pre_trade": "200.00",
+    "buying_power_post_trade": "180.00",
+    "equity_value_post_trade": "19.99804282",
+    "total_value_post_trade": "199.99804282",
+    "kill_switch_floor": "85.00",
+    "kill_switch_triggered": false,
+    "max_position_usd": "10.00",
+    "session": "regular_open",
+    "volatility_halt_active": false,
+    "orders_blocked_reason": null
+  },
+  "positions": [
+    {
+      "symbol": "XLI",
+      "quantity": "0.057954",
+      "average_buy_price": "172.549900",
+      "shares_available_for_sells": "0.057954",
+      "stop_price": "167.37",
+      "profit_target_price": "181.18"
+    },
+    {
+      "symbol": "TLT",
+      "quantity": "0.123068",
+      "average_buy_price": "81.255700",
+      "shares_available_for_sells": "0.123068",
+      "stop_price": "78.82",
+      "profit_target_price": "85.32"
+    }
+  ],
+  "orders": {
+    "open": [],
+    "queued": [],
+    "executed_this_cycle": [
+      {
+        "id": "6aa40e45-2ff2-4162-a54c-6ca61c716c0a",
+        "ref_id": "f509ce5b-c49d-494a-a837-f70c3533ea29",
+        "symbol": "XLI",
+        "side": "buy",
+        "type": "market",
+        "dollar_amount": "10.00",
+        "quantity": "0.057954",
+        "average_price": "172.549900",
+        "state": "filled",
+        "placed_agent": "agentic",
+        "created_at": "2026-09-11T14:20:53.137085Z",
+        "filled_at": "2026-09-11T14:20:53.269Z"
+      },
+      {
+        "id": "6aa40e45-ad48-4270-b193-882525a657e2",
+        "ref_id": "ea4d72b7-b071-4a93-8cbc-e96898c24b04",
+        "symbol": "TLT",
+        "side": "buy",
+        "type": "market",
+        "dollar_amount": "10.00",
+        "quantity": "0.123068",
+        "average_price": "81.255700",
+        "state": "filled",
+        "placed_agent": "agentic",
+        "created_at": "2026-09-11T14:20:53.629274Z",
+        "filled_at": "2026-09-11T14:20:53.764Z"
+      }
+    ],
+    "rejected_this_cycle": [
+      {
+        "symbol": "XLI",
+        "side": "sell",
+        "type": "stop_market",
+        "quantity": "0.057954",
+        "stop_price": "167.37",
+        "time_in_force": "gtc",
+        "error": "Invalid time in force for fractional order.",
+        "retry_attempted": false
+      },
+      {
+        "symbol": "TLT",
+        "side": "sell",
+        "type": "stop_market",
+        "quantity": "0.123068",
+        "stop_price": "78.82",
+        "time_in_force": "gtc",
+        "error": "Invalid time in force for fractional order.",
+        "retry_attempted": false
+      }
+    ]
+  },
+  "alerts": [
+    {
+      "alert_id": "4df3b6a9-dca0-4f81-ac19-8dfa54dd814c",
+      "symbol": "XLI",
+      "condition_type": "price_below",
+      "threshold": "167.37",
+      "purpose": "3pct_stop_monitor"
+    },
+    {
+      "alert_id": "2ee087df-d31a-4802-b5b5-2aea68a45baa",
+      "symbol": "XLI",
+      "condition_type": "price_above",
+      "threshold": "181.18",
+      "purpose": "5pct_profit_monitor"
+    },
+    {
+      "alert_id": "09024bd8-35eb-42b7-8c07-1aeba2616b15",
+      "symbol": "TLT",
+      "condition_type": "price_below",
+      "threshold": "78.82",
+      "purpose": "3pct_stop_monitor"
+    },
+    {
+      "alert_id": "381223e0-58b8-4652-8ff6-ff8e92121ee4",
+      "symbol": "TLT",
+      "condition_type": "price_above",
+      "threshold": "85.32",
+      "purpose": "5pct_profit_monitor"
+    }
+  ],
+  "exits": {
+    "scanned": true,
+    "applicable": true,
+    "profit_target_pct": 5,
+    "stop_loss_pct": 3,
+    "sold": []
+  },
+  "watchlist": ["SPY", "QQQ", "XLK", "VTI", "XLI", "XLF", "XLE", "XLV", "IWM", "TLT", "GLD"],
+  "scan_only": [],
+  "rsi": {
+    "period": 14,
+    "interval": "day",
+    "bounds": "regular",
+    "bar_begins_at": "2026-09-10T00:00:00Z",
+    "values": {
+      "SPY": 44.171716043369145,
+      "QQQ": 46.490379218342184,
+      "XLK": 50.91118621414028,
+      "VTI": 43.22080344213766,
+      "XLI": 30.364110369103827,
+      "XLF": 44.51388024265037,
+      "XLE": 64.99090534476031,
+      "XLV": 41.47278930524461,
+      "IWM": 36.423766731417075,
+      "TLT": 34.277603688792865,
+      "GLD": 45.76005725455454
+    }
+  },
+  "quotes": {
+    "prior_close_date": "2026-09-10",
+    "results": {
+      "SPY": {
+        "last_trade_price": "765.690000",
+        "previous_close": "757.830000",
+        "bid_price": "765.670000",
+        "ask_price": "765.700000"
+      },
+      "QQQ": {
+        "last_trade_price": "716.080000",
+        "previous_close": "708.690000",
+        "bid_price": "716.070000",
+        "ask_price": "716.090000"
+      },
+      "XLK": {
+        "last_trade_price": "187.960000",
+        "previous_close": "185.220000",
+        "bid_price": "187.920000",
+        "ask_price": "187.940000"
+      },
+      "VTI": {
+        "last_trade_price": "376.930000",
+        "previous_close": "373.240000",
+        "bid_price": "376.910000",
+        "ask_price": "376.940000"
+      },
+      "XLI": {
+        "last_trade_price": "172.480000",
+        "previous_close": "170.550000",
+        "bid_price": "172.460000",
+        "ask_price": "172.490000"
+      },
+      "XLF": {
+        "last_trade_price": "57.145000",
+        "previous_close": "56.870000",
+        "bid_price": "57.150000",
+        "ask_price": "57.160000"
+      },
+      "XLE": {
+        "last_trade_price": "65.170000",
+        "previous_close": "64.930000",
+        "bid_price": "65.170000",
+        "ask_price": "65.180000"
+      },
+      "XLV": {
+        "last_trade_price": "166.170000",
+        "previous_close": "165.660000",
+        "bid_price": "166.150000",
+        "ask_price": "166.180000"
+      },
+      "IWM": {
+        "last_trade_price": "289.880000",
+        "previous_close": "287.700000",
+        "bid_price": "289.880000",
+        "ask_price": "289.900000"
+      },
+      "TLT": {
+        "last_trade_price": "81.269900",
+        "previous_close": "80.780000",
+        "bid_price": "81.260000",
+        "ask_price": "81.270000"
+      },
+      "GLD": {
+        "last_trade_price": "401.940000",
+        "previous_close": "396.360000",
+        "bid_price": "401.890000",
+        "ask_price": "401.940000"
+      }
+    }
+  },
+  "quote_disclosures": {
+    "xli_buy_review": "Bid $172.51 × 100 V · Ask $172.53 × 200 P · Last $172.54 × 200 P. Updated 10:20 AM ET.",
+    "tlt_buy_review": "Bid $81.24 × 13500 Q · Ask $81.25 × 8700 V · Last $81.245 × 149 D. Updated 10:20 AM ET.",
+    "xli_stop_review": "Bid $172.53 × 400 P · Ask $172.55 × 100 Q · Last $172.54 × 100 V. Updated 10:21 AM ET.",
+    "tlt_stop_review": "Bid $81.24 × 9300 Q · Ask $81.25 × 11000 P · Last $81.2492 × 2450 D. Updated 10:21 AM ET."
+  },
+  "entries": {
+    "candidates_rsi_below_35": ["XLI", "TLT"],
+    "executed": [
+      {
+        "symbol": "XLI",
+        "rsi": 30.36,
+        "dollar_amount": "10.00",
+        "fill_price": "172.549900",
+        "quantity": "0.057954"
+      },
+      {
+        "symbol": "TLT",
+        "rsi": 34.28,
+        "dollar_amount": "10.00",
+        "fill_price": "81.255700",
+        "quantity": "0.123068"
+      }
+    ],
+    "blocked": [
+      {
+        "symbol": "SPY",
+        "rsi": 44.17,
+        "reason": "rsi_not_oversold"
+      },
+      {
+        "symbol": "QQQ",
+        "rsi": 46.49,
+        "reason": "rsi_not_oversold"
+      },
+      {
+        "symbol": "XLK",
+        "rsi": 50.91,
+        "reason": "rsi_not_oversold"
+      },
+      {
+        "symbol": "VTI",
+        "rsi": 43.22,
+        "reason": "rsi_not_oversold"
+      },
+      {
+        "symbol": "XLF",
+        "rsi": 44.51,
+        "reason": "rsi_not_oversold"
+      },
+      {
+        "symbol": "XLE",
+        "rsi": 64.99,
+        "reason": "rsi_not_oversold"
+      },
+      {
+        "symbol": "XLV",
+        "rsi": 41.47,
+        "reason": "rsi_not_oversold"
+      },
+      {
+        "symbol": "IWM",
+        "rsi": 36.42,
+        "reason": "rsi_not_oversold"
+      },
+      {
+        "symbol": "GLD",
+        "rsi": 45.76,
+        "reason": "rsi_not_oversold"
+      }
+    ]
+  }
+}
