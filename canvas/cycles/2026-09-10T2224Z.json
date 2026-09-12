@@ -1,0 +1,208 @@
+{
+  "cycle_id": "2026-09-10T2224Z",
+  "triggered_at": "2026-09-10T22:24:45.879Z",
+  "evaluated_at": "2026-09-10T22:24:45Z",
+  "evaluated_et": "2026-09-10 18:24 EDT",
+  "schedule": "15 14 * * 1-5",
+  "account_nickname": "SPIES",
+  "account_type": "cash",
+  "session": {
+    "regular_hours": "closed",
+    "in_volatility_halt_window": false,
+    "volatility_halt_windows_et": ["09:30-10:00", "15:30-16:00"],
+    "after_close_order_policy": "do_not_queue_regular_hours_market_or_fractional_dollar_orders"
+  },
+  "guardrails": {
+    "cash": 200.0,
+    "buying_power": 200.0,
+    "unsettled_funds": 0.0,
+    "kill_switch_threshold": 85.0,
+    "kill_switch_triggered": false,
+    "max_position_usd": 10.0,
+    "entry_rsi_threshold": 35,
+    "profit_target_pct": 5.0,
+    "stop_loss_pct": 3.0,
+    "allowed_watchlist": ["SPY", "QQQ", "XLK", "VTI"],
+    "scan_only": ["XLF", "XLE", "XLV", "XLI", "IWM", "TLT", "GLD"]
+  },
+  "positions": [],
+  "open_orders": {
+    "queued": [],
+    "confirmed": []
+  },
+  "quotes": [
+    {
+      "symbol": "SPY",
+      "role": "watchlist",
+      "last_trade_price": 757.87,
+      "last_trade_time": "2026-09-10T19:59:59.99992519Z",
+      "last_non_reg_trade_price": 758.5129,
+      "last_non_reg_trade_time": "2026-09-10T22:24:38.7301024Z",
+      "previous_close": 762.4,
+      "previous_close_date": "2026-09-09",
+      "day_change_pct": -0.59
+    },
+    {
+      "symbol": "QQQ",
+      "role": "watchlist",
+      "last_trade_price": 708.66,
+      "last_trade_time": "2026-09-10T19:59:59.892555246Z",
+      "last_non_reg_trade_price": 708.98,
+      "last_non_reg_trade_time": "2026-09-10T22:23:15.538777939Z",
+      "previous_close": 716.31,
+      "previous_close_date": "2026-09-09",
+      "day_change_pct": -1.07
+    },
+    {
+      "symbol": "XLK",
+      "role": "watchlist",
+      "last_trade_price": 185.21,
+      "last_trade_time": "2026-09-10T19:59:59.75734863Z",
+      "last_non_reg_trade_price": 185.47,
+      "last_non_reg_trade_time": "2026-09-10T21:21:24.096040546Z",
+      "previous_close": 187.87,
+      "previous_close_date": "2026-09-09",
+      "day_change_pct": -1.42
+    },
+    {
+      "symbol": "VTI",
+      "role": "watchlist",
+      "last_trade_price": 373.22,
+      "last_trade_time": "2026-09-10T19:59:58.840212307Z",
+      "last_non_reg_trade_price": 373.3,
+      "last_non_reg_trade_time": "2026-09-10T22:05:56.503184691Z",
+      "previous_close": 375.56,
+      "previous_close_date": "2026-09-09",
+      "day_change_pct": -0.62
+    },
+    {
+      "symbol": "XLF",
+      "role": "scan-only",
+      "last_trade_price": 56.88,
+      "last_trade_time": "2026-09-10T19:59:59.869266689Z",
+      "last_non_reg_trade_price": 56.896,
+      "last_non_reg_trade_time": "2026-09-10T21:41:27.825306141Z",
+      "previous_close": 57.06,
+      "previous_close_date": "2026-09-09",
+      "day_change_pct": -0.32
+    },
+    {
+      "symbol": "XLE",
+      "role": "scan-only",
+      "last_trade_price": 64.94,
+      "last_trade_time": "2026-09-10T19:59:59.493620559Z",
+      "last_non_reg_trade_price": 64.9699,
+      "last_non_reg_trade_time": "2026-09-10T22:21:33.083446504Z",
+      "previous_close": 65.31,
+      "previous_close_date": "2026-09-09",
+      "day_change_pct": -0.57
+    },
+    {
+      "symbol": "XLV",
+      "role": "scan-only",
+      "last_trade_price": 165.67,
+      "last_trade_time": "2026-09-10T19:59:59.962283727Z",
+      "last_non_reg_trade_price": 166.23,
+      "last_non_reg_trade_time": "2026-09-10T22:17:24.676672723Z",
+      "previous_close": 166.58,
+      "previous_close_date": "2026-09-09",
+      "day_change_pct": -0.55
+    },
+    {
+      "symbol": "XLI",
+      "role": "scan-only",
+      "last_trade_price": 170.53,
+      "last_trade_time": "2026-09-10T19:59:59.787978255Z",
+      "last_non_reg_trade_price": 170.2217,
+      "last_non_reg_trade_time": "2026-09-10T22:03:50.964121313Z",
+      "previous_close": 171.79,
+      "previous_close_date": "2026-09-09",
+      "day_change_pct": -0.73
+    },
+    {
+      "symbol": "IWM",
+      "role": "scan-only",
+      "last_trade_price": 287.7375,
+      "last_trade_time": "2026-09-10T19:59:59.999693574Z",
+      "last_non_reg_trade_price": 287.8,
+      "last_non_reg_trade_time": "2026-09-10T22:23:07.666745565Z",
+      "previous_close": 290.64,
+      "previous_close_date": "2026-09-09",
+      "day_change_pct": -1.0
+    },
+    {
+      "symbol": "TLT",
+      "role": "scan-only",
+      "last_trade_price": 80.79,
+      "last_trade_time": "2026-09-10T19:59:59.564712653Z",
+      "last_non_reg_trade_price": 80.76,
+      "last_non_reg_trade_time": "2026-09-10T22:25:42.88079262Z",
+      "previous_close": 81.73,
+      "previous_close_date": "2026-09-09",
+      "day_change_pct": -1.15
+    },
+    {
+      "symbol": "GLD",
+      "role": "scan-only",
+      "last_trade_price": 396.46,
+      "last_trade_time": "2026-09-10T19:59:59.722548845Z",
+      "last_non_reg_trade_price": 396.0,
+      "last_non_reg_trade_time": "2026-09-10T22:24:13.471603304Z",
+      "previous_close": 403.35,
+      "previous_close_date": "2026-09-09",
+      "day_change_pct": -1.71
+    }
+  ],
+  "rsi_14_daily": {
+    "bar_date": "2026-09-09",
+    "interval": "day",
+    "bounds": "regular",
+    "period": 14,
+    "note": "Latest published daily RSI bar is 2026-09-09; 2026-09-10 bar was not yet available.",
+    "values": {
+      "SPY": 48.09358291913087,
+      "QQQ": 51.79481058794822,
+      "XLK": 56.2933122097977,
+      "VTI": 47.03755526750753,
+      "XLF": 46.096407491081735,
+      "XLE": 68.12254326537865,
+      "XLV": 43.41127005774133,
+      "XLI": 32.405675722648596,
+      "IWM": 40.16049534649587,
+      "TLT": 41.16637814041417,
+      "GLD": 50.22314575692613
+    }
+  },
+  "decisions": {
+    "entries": [
+      {
+        "symbol": "SPY",
+        "action": "hold_flat",
+        "reason": "RSI 48.09 >= 35"
+      },
+      {
+        "symbol": "QQQ",
+        "action": "hold_flat",
+        "reason": "RSI 51.79 >= 35"
+      },
+      {
+        "symbol": "XLK",
+        "action": "hold_flat",
+        "reason": "RSI 56.29 >= 35"
+      },
+      {
+        "symbol": "VTI",
+        "action": "hold_flat",
+        "reason": "RSI 47.04 >= 35"
+      },
+      {
+        "symbol": "XLI",
+        "action": "blocked",
+        "reason": "RSI 32.41 < 35 but symbol is outside hard watchlist [SPY, QQQ, XLK, VTI]; regular session closed so a $10 fractional market buy could not execute without queueing into the 09:30 ET volatility halt"
+      }
+    ],
+    "exits": [],
+    "orders": []
+  },
+  "result": "no_orders"
+}
